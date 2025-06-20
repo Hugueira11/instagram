@@ -1,49 +1,58 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-    background-color: #fafafa;  /*cor de fundo*/
-    width: 100vw; /*largura*/
-    height: 100vh; /*altura*/
+    background-color: #fafafa;
+    /*cor de fundo*/
+    width: 100vw;
+    /*largura*/
+    height: 100vh;
+    /*altura*/
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.caixa-imagens{
-    position:relative;
+
+.caixa-imagem {
+    position: relative;
 }
+
 .imagem-celular {
     width: 450px;
 }
-.imagem-insta{
-    height: 520px;
-    position:absolute;
-    left: 435px;
-    top: 36px;
+
+.imagem-insta {
+    height: 521px;
+    position: absolute;
+    left: 153px;
+    top: 25px;
 }
+
 .insta-logo {
     margin-bottom: 20px;
 }
-.logo-ios{
+
+.logo-ios {
     position: absolute;
     bottom: 0;
     right: 0;
     height: 45px;
     width: auto;
-    margin-right: 281px;
+    margin-right: -350px;
     margin-bottom: 30px;
 }
 
-.imagem-google{
+.imagem-google {
     position: absolute;
     bottom: 0;
     right: 0;
     height: 45px;
     width: auto;
-    margin-right: 480px;
+    margin-right: -151px;
     margin-bottom: 30px;
 }
 
@@ -55,15 +64,15 @@ body {
     flex-direction: column;
     background-color: #ffffff;
 }
-input 
-{
-height: 36px;
-margin-top: 5px;
-border: 1px solid #dbdbdb;
-border-radius: 5px;
-outline: none;
-padding-left: 5px;
-color: #262626;
+
+input {
+    height: 36px;
+    margin-top: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 5px;
+    color: #262626;
 }
 
 button {
@@ -75,19 +84,24 @@ button {
     margin-top: 20px;
     cursor: pointer;
 }
-.login-facebook{
-    color:#385185;
-    font-size: 14px; /*tamanho da fonte */
-    font-weight: bold; /*espessura da fonte/bold=negrito*/
-    text-align: center; /*alinhamento do texto*/
+
+.login-facebook {
+    color: #385185;
+    font-size: 14px;
+    /*tamanho da fonte */
+    font-weight: bold;
+    /*espessura da fonte/bold=negrito*/
+    text-align: center;
+    /*alinhamento do texto*/
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
 }
+
 .esqueceu-senha {
     color: #385185;
     text-align: center;
-    font-size: 12px;
+    font-size: 12px bold;
     cursor: pointer;
 }
 
@@ -103,4 +117,46 @@ a {
     text-align: center;
     margin-top: 10px;
     cursor: pointer;
+    font-size: bold;
+}
+
+@media (max-width: 800px) {
+    body {
+        display: flex;
+    }
+
+    .caixa-imagem {
+      position: relative;
+
+    }
+
+    .imagem-celular {
+        display: none;
+    }
+
+    .imagem-insta {
+        display: none;
+    }
+
+    .logo-ios {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 45px;
+    width: auto;
+    margin-right: -350px;
+    margin-bottom: -280px;
+}
+
+.imagem-google {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 45px;
+    width: auto;
+    margin-right: -151px;
+    margin-bottom: -280px;
+}
+   
+
 }
